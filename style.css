@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "LEMON MILK Regular";
+    src: url(fonts/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+    font-family: "LEMON MILK Bold";
+    src: url(fonts/LEMONMILK-Bold.otf);
+}
+
+@font-face {
+    font-family: "LEMON MILK Light";
+    src: url(fonts/LEMONMILK-Light.otf);
+}
+
+@font-face {
+    font-family: "LEMON MILK Medium";
+    src: url(fonts/LEMONMILK-Medium.otf);
+}
+
+@font-face {
+    font-family: "Be Vietnam Regular";
+    src: url(fonts/BeVietnam-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Be Vietnam Light";
+    src: url(fonts/BeVietnam-Light.ttf);
+}
+
+@font-face {
+    font-family: "Be Vietnam Bold";
+    src: url(fonts/BeVietnam-Bold.ttf);
+
+}
+
+@font-face {
+    font-family: "Be Vietnam Medium";
+    src: url(fonts/BeVietnam-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    border: 1px solid red;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background: #F1E6FF;
+    background-image: url(/images/halfBg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 3%;
+}
+
+section {
+    height: 100dvh;
+    scroll-snap-align: start;
+    min-height: 750px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+nav #sidebar {
+    font-family: "LEMON MILK Regular", sans-serif;
+    font-size: 17px;
+    text-align: right;
+    border-right: 3px solid black;
+    width: 154px;
+    height: 541px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: sticky;
+    top: 20dvh;
+}
+
+#sidebar ul {
+    margin-right: 2dvw;
+    line-height: 40px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+#about #info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#infoLeft h1 {
+    font-family: "LEMON MILK Regular", sans-serif;
+    font-size: 85px;
+    text-shadow: 1px 0.8px 2px rgba(0, 0, 0, 0.60);
+    padding-top: 22dvh;
+    padding-left: 3%;
+}
+
+#infoLeft p {
+    font-family: "Be Vietnam Regular", sans-serif;
+    font-size: 17px;
+    padding-left: 3svw;
+    padding-right: 14%;
+    max-width: 45dvw;
+    
+}
+
+#info img {
+    width: 321px;
+    height: 429px;
+    margin-right: 7svw;
+    margin-top: 25dvh;
+}
+
+#aboutLinks {
+    display: flex;
+    width: fit-content;
+    flex-flow: column;
+    margin-top: 5dvh;
+    margin-left: 3dvw;
+    
+}
+
+#aboutLinks .svg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 236px;
+    margin-top: 11dvh;
+}
+
+#aboutLinks .button {
+    font-family: "Be Vietnam Medium", sans-serif;
+    font-size: 17px;
+    line-height: 54px;
+    border-radius: 3px 15px 15px 15px;
+    background: #FFF;
+    box-shadow: -1px 4px 4px 2px rgba(0, 0, 0, 0.20);
+    width: 236px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5dvh;
+}
+
+#aboutLinks .button :hover  {
+    font-family: "Be Vietnam Bold", sans-serif;
+    font-size: 23px;
+    line-height: 54px;
+    transition: all 0.8s ease 0s;
+}
+
+#about .navArrow {
+    position: absolute;
+    bottom: 1%;
+    right: 1dvw;
+
+}
