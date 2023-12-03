@@ -63,6 +63,7 @@ body {
 section {
     height: 100dvh;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     min-height: 750px;
 }
 
@@ -113,8 +114,7 @@ nav #sidebar {
     font-size: 17px;
     padding-left: 3svw;
     padding-right: 14%;
-    max-width: 45dvw;
-    
+    max-width: 45dvw; 
 }
 
 #info img {
@@ -130,7 +130,6 @@ nav #sidebar {
     flex-flow: column;
     margin-top: 5dvh;
     margin-left: 3dvw;
-    
 }
 
 #aboutLinks .svg {
@@ -142,7 +141,7 @@ nav #sidebar {
 }
 
 #aboutLinks .button {
-    font-family: "Be Vietnam Medium", sans-serif;
+    font-family: "LEMON MILK Regular", sans-serif;
     font-size: 17px;
     line-height: 54px;
     border-radius: 3px 15px 15px 15px;
@@ -157,8 +156,8 @@ nav #sidebar {
 }
 
 #aboutLinks .button :hover  {
-    font-family: "Be Vietnam Bold", sans-serif;
-    font-size: 23px;
+    font-family: "LEMON MILK Medium", sans-serif;
+    font-size: 27px;
     line-height: 54px;
     transition: all 0.8s ease 0s;
 }
@@ -167,5 +166,4 @@ nav #sidebar {
     position: absolute;
     bottom: 1%;
     right: 1dvw;
-
 }
