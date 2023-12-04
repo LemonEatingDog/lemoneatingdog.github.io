@@ -52,12 +52,33 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-body {
+/* Image based background*/
+
+/* body {
     background: #F1E6FF;
     background-image: url(images/halfBg.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 3%;
+    background-attachment: fixed;
+} */
+
+
+/*CSS Background*/
+body {
+    background: #F1E6FF;
+    margin-left: 3%;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, transparent 50%, #fbf8ff 50%);
+    z-index: -1;
 }
 
 section {
@@ -115,7 +136,8 @@ nav #sidebar {
     font-size: 17px;
     padding-left: 3svw;
     padding-right: 14%;
-    max-width: 45dvw; 
+    max-width: 70ch;
+    min-width: 45ch;
 }
 
 #info img {
