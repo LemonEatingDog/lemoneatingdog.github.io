@@ -91,21 +91,6 @@ nav #sidebar {
     line-height: 40px;
 }
 
-/* Add a class to highlight the active link */
-#sidebar li a.active {
-    text-shadow: 20px 5px 5px red;
-    font-size: 20px;
-}
-
-/* Optionally, add a transition effect for a smoother change */
-#sidebar li a {
-    transition: all 0.3s ease-in-out;
-}
-
-#sidebar li a:hover {
-    transform: scale(1.2);
-}
-
 #about {
     display: flex;
     flex-direction: column;
@@ -157,7 +142,7 @@ nav #sidebar {
 }
 
 #aboutLinks .svg svg {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 #aboutLinks .svg svg:hover {
     transform: scale(1.2);
@@ -184,6 +169,7 @@ nav #sidebar {
     color: #4CAF50;
     font-size: 20px;
     line-height: 54px;
+    border-radius: 15px 15px 15px 15px;
     transition: all 0.8s ease 0s;
 }
 
