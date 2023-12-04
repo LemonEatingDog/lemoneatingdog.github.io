@@ -54,7 +54,7 @@ html {
 
 body {
     background: #F1E6FF;
-    background-image: url(/images/halfBg.png);
+    background-image: url(../images/halfBg.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 3%;
