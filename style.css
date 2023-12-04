@@ -76,6 +76,7 @@ nav #sidebar {
     font-size: 17px;
     text-align: right;
     border-right: 3px solid black;
+    
     width: 154px;
     height: 541px;
     display: flex;
@@ -88,6 +89,21 @@ nav #sidebar {
 #sidebar ul {
     margin-right: 2dvw;
     line-height: 40px;
+}
+
+/* Add a class to highlight the active link */
+#sidebar li a.active {
+    text-shadow: 20px 5px 5px red;
+    font-size: 20px;
+}
+
+/* Optionally, add a transition effect for a smoother change */
+#sidebar li a {
+    transition: all 0.3s ease-in-out;
+}
+
+#sidebar li a:hover {
+    transform: scale(1.2);
 }
 
 #about {
@@ -140,6 +156,13 @@ nav #sidebar {
     margin-top: 11dvh;
 }
 
+#aboutLinks .svg svg {
+    transition: transform 0.3s ease-in-out;
+}
+#aboutLinks .svg svg:hover {
+    transform: scale(1.2);
+}
+
 #aboutLinks .button {
     font-family: "LEMON MILK Regular", sans-serif;
     font-size: 17px;
@@ -153,11 +176,13 @@ nav #sidebar {
     justify-content: center;
     align-items: center;
     margin-top: 5dvh;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-#aboutLinks .button :hover  {
-    font-family: "LEMON MILK Medium", sans-serif;
-    font-size: 27px;
+#aboutLinks .button:hover  {
+    transform: scale(1.1);
+    color: #4CAF50;
+    font-size: 20px;
     line-height: 54px;
     transition: all 0.8s ease 0s;
 }
