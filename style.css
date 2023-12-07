@@ -45,7 +45,7 @@
     text-decoration: none;
     color: black;
     list-style-type: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -81,6 +81,10 @@ body::before {
     z-index: -1;
 }
 
+.wrapper {
+    display: flex;
+}
+
 section {
     height: 100dvh;
     scroll-snap-align: start;
@@ -88,16 +92,15 @@ section {
     min-height: 750px;
 }
 
-.wrapper {
-    display: flex;
-}
+/* .navArrow {
+    padding-left: 99%;
+} */
 
 nav #sidebar {
     font-family: "LEMON MILK Regular", sans-serif;
     font-size: 17px;
     text-align: right;
     border-right: 3px solid black;
-    
     width: 154px;
     height: 541px;
     display: flex;
@@ -112,7 +115,7 @@ nav #sidebar {
     line-height: 40px;
 }
 
-#about {
+section #about {
     display: flex;
     flex-direction: column;
 }
@@ -126,7 +129,9 @@ nav #sidebar {
 #infoLeft h1 {
     font-family: "LEMON MILK Regular", sans-serif;
     font-size: 85px;
-    text-shadow: 1px 0.8px 2px rgba(0, 0, 0, 0.60);
+    /* text-shadow: 1px 0.8px 2px rgba(0, 0, 0, 0.60); */
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
     padding-top: 22dvh;
     padding-left: 3%;
 }
@@ -183,7 +188,7 @@ nav #sidebar {
     justify-content: center;
     align-items: center;
     margin-top: 5dvh;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: all 0.8s ease 0s;
 }
 
 #aboutLinks .button:hover  {
@@ -195,8 +200,60 @@ nav #sidebar {
     transition: all 0.8s ease 0s;
 }
 
-#about .navArrow {
-    position: absolute;
-    bottom: 1%;
-    right: 1dvw;
+section #projects {
+    display: flex;
 }
+
+#projects .project {
+    display:flex;
+    padding-top: 4%;
+    width: fit-content;       
+    margin-left: 100px;
+}
+
+.project div {
+    display: flex;
+    flex-flow: column;
+}
+.project h2 {
+    color: #000;    
+    font-family: "LEMON MILK REGULAR", sans-serif;
+    font-size: 19px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.project img {
+    height: 199px;
+    width: 323px;
+    background-color: white;
+	transform: scale(1);
+    margin-top: 10px;
+	transition: .3s ease-in-out;
+}
+
+.project img:hover {
+	transform: scale(1.1);
+}
+
+.project p {
+    font-family: "Be Vietnam Regular", sans-serif;
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 17px;
+    width: 526px;
+    margin-top: 55px;
+    margin-left: 34px;
+}
+
+.project p a {
+    font-family: "Be Vietnam Medium", sans-serif;
+    color: #007BFF;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+  
+.project p a:hover {
+    text-decoration-color: #007BFF;
+}
+
